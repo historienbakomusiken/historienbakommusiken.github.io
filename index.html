@@ -49,11 +49,8 @@ header p{
   font-size:16px;
 }
 
-section{
-  display:block;
-}
+section{display:block;}
 
-/* Rubriker */
 .section-title{
   font-family:"Playfair Display",serif;
   color:var(--gold-soft);
@@ -74,10 +71,7 @@ section{
   box-shadow:0 20px 60px rgba(0,0,0,0.45);
 }
 
-.project-box p{
-  margin-bottom:14px;
-  color:#e3e3e3;
-}
+.project-box p{margin-bottom:14px;color:#e3e3e3;}
 
 .project-meta{
   margin-top:18px;
@@ -91,7 +85,6 @@ section{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
   gap:40px;
-  align-items:start;
 }
 
 .embed-wrap{
@@ -113,16 +106,11 @@ section{
   margin-bottom:14px;
 }
 
-.embed-wrap .instagram-media{
-  max-width:100% !important;
-  width:100% !important;
-  margin:0 auto !important;
-  border-radius:10px !important;
-}
-
+.embed-wrap .instagram-media,
 .embed-wrap iframe{
-  max-width:100% !important;
-  width:100% !important;
+  max-width:100%!important;
+  width:100%!important;
+  margin:0 auto!important;
 }
 
 /* Följ projektet */
@@ -140,7 +128,7 @@ section{
 
 .social-icons{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
   gap:22px;
 }
 
@@ -154,13 +142,13 @@ section{
   border-radius:14px;
   background:linear-gradient(180deg,#121826,#0d121c);
   border:1px solid rgba(212,179,106,0.22);
-  transition:all 0.2s ease;
+  transition:.2s ease;
 }
 
 .social-icon a:hover{
   transform:translateY(-2px);
   border-color:var(--gold-soft);
-  box-shadow:0 10px 30px rgba(0,0,0,0.45);
+  box-shadow:0 10px 30px rgba(0,0,0,.45);
 }
 
 .icon-container{
@@ -179,15 +167,14 @@ section{
 
 .social-icon span{
   font-size:15px;
-  letter-spacing:0.02em;
+  letter-spacing:.02em;
 }
 
 /* Mobil */
 @media (max-width:600px){
-  header h1{ font-size:32px; }
-  .container{ padding:40px 16px 80px; }
-  .embed-wrap{ padding:14px 10px 18px; }
-  .project-box{ padding:22px 18px 26px; }
+  header h1{font-size:32px;}
+  .container{padding:40px 16px 80px;}
+  .project-box{padding:22px 18px;}
 }
 
 footer{
@@ -209,14 +196,10 @@ footer{
 
 <section>
   <div class="section-title">Om projektet</div>
-
   <div class="project-box">
     <p><strong>Historien bakom musiken</strong> är en svensk podcast om hur musik faktiskt skapas, berättad ur perspektivet av en aktiv artist och producent.</p>
-
     <p>Podcasten lanserades i december 2023 och har nått förstaplats (#1) på Spotify-topplistor i Sverige under 2023 och 2024.</p>
-
     <p>Projektet omfattar podcastavsnitt, utdrag och kompletterande innehåll om musikskapande, kreativt arbete och livet som oberoende artist.</p>
-
     <div class="project-meta">
       📍 Projekt: Historien bakom musiken<br>
       🎙️ Genre: Musik / Podcast / Kreativt skapande
@@ -226,12 +209,10 @@ footer{
 
 <section>
   <div class="section-title">Utvalda milstolpar</div>
-
   <div class="posts">
     <div class="embed-wrap">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C1aKhNxL0S9/" data-instgrm-version="14"></blockquote>
     </div>
-
     <div class="embed-wrap">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DDKsFTAM7rC/" data-instgrm-version="14"></blockquote>
     </div>
@@ -240,33 +221,44 @@ footer{
 
 <section class="follow-section">
   <h2>Följ projektet</h2>
-
   <div class="social-icons">
 
+    <!-- Instagram -->
     <div class="social-icon">
-      <a href="https://www.instagram.com/historienbakommusiken" target="_blank">
-        <div class="icon-container">📷</div>
+      <a href="https://www.instagram.com/historienbakommusiken?igsh=MXhkcXp6a2J1MjN6NQ==" target="_blank">
+        <div class="icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141z"/></svg>
+        </div>
         <span>Instagram</span>
       </a>
     </div>
 
+    <!-- Facebook -->
     <div class="social-icon">
       <a href="https://www.facebook.com/share/17mCscac1o/" target="_blank">
-        <div class="icon-container">📘</div>
+        <div class="icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256z"/></svg>
+        </div>
         <span>Facebook</span>
       </a>
     </div>
 
+    <!-- Spotify -->
     <div class="social-icon">
       <a href="https://open.spotify.com/show/4iNHYPETp0acYF9bdagB2B" target="_blank">
-        <div class="icon-container">🎧</div>
+        <div class="icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111.1 8 0 119.1 0 256z"/></svg>
+        </div>
         <span>Spotify</span>
       </a>
     </div>
 
+    <!-- TikTok -->
     <div class="social-icon">
       <a href="https://www.tiktok.com/@historienbakommusiken" target="_blank">
-        <div class="icon-container">🎵</div>
+        <div class="icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448,209.91z"/></svg>
+        </div>
         <span>TikTok</span>
       </a>
     </div>
